@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">WearablePillReminder</string>
+    <string name="dialog_permission_title">Permission Required</string>
+    <string name="dialog_permission_default_message">We need permission to see objects.</string>
+    <string name="dialog_permission_button_positive">OK</string>
+    <string name="please_select_reminder_day">Please select reminder date</string>
+    <string name="please_select_hour">Please select hour</string>
+    <string name="please_select_minute">Please select minute</string>
+    <string name="please_enter_pill_name">Please enter pill name</string>
+    <string name="please_enter_valid_dosage">Please enter valid dosage</string>
+
+    <string-array name="FrequentlyList">
+        <item>Every Day</item>
+        <item>Every Week</item>
+        <item>Specific Days</item>
+    </string-array>
+</resources>

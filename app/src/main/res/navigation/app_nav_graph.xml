@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/app_nav_graph"
+    app:startDestination="@id/allRemindersFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.hms.codelab.pillreminder.ui.home.HomeFragment"
+        android:label="HomeFragment" >
+        <action
+            android:id="@+id/action_homeFragment_to_emptyFragment"
+            app:destination="@id/emptyFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_connectDeviceFragment"
+            app:destination="@id/connectDeviceFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_allRemindersFragment"
+            app:destination="@id/allRemindersFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_addReminderFragment"
+            app:destination="@id/addReminderFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_mapFragment"
+            app:destination="@id/mapFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/emptyFragment"
+        android:name="com.hms.codelab.pillreminder.ui.emty.EmptyFragment"
+        android:label="EmptyFragment" />
+    <fragment
+        android:id="@+id/connectDeviceFragment"
+        android:name="com.hms.codelab.pillreminder.ui.connect.ConnectDeviceFragment"
+        android:label="ConnectDeviceFragment" />
+    <fragment
+        android:id="@+id/allRemindersFragment"
+        android:name="com.hms.codelab.pillreminder.ui.allreminders.AllRemindersFragment"
+        android:label="AllRemindersFragment" >
+        <action
+            android:id="@+id/action_allRemindersFragment_to_addReminderFragment"
+            app:destination="@id/addReminderFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addReminderFragment"
+        android:name="com.hms.codelab.pillreminder.ui.addreminder.AddReminderFragment"
+        android:label="AddReminderFragment" >
+        <action
+            android:id="@+id/action_addReminderFragment_to_allRemindersFragment"
+            app:destination="@id/allRemindersFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/mapFragment"
+        android:name="com.hms.codelab.pillreminder.ui.map.MapFragment"
+        android:label="MapFragment" />
+</navigation>

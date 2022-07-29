@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="?colorSurface">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="50dp"
+            android:fontFamily="@font/muli_regular"
+            android:text="Add New Pill Reminder"
+            android:textColor="#2B616D"
+            android:textSize="25dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_name"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/muli_regular">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etPillName"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/muli_regular"
+                    android:hint="Pill Name"
+                    android:inputType="textCapWords"
+                    android:lines="1"
+                    android:paddingStart="15dp"
+                    android:singleLine="true"
+                    android:textAlignment="textStart"
+                    android:textColor="#2B616D"
+                    android:textSize="15sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:orientation="vertical"
+            android:padding="4dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/muli_regular"
+                android:text="Frequently"
+                android:textColor="#2B616D" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginTop="5dp"
+                android:background="?colorSurface">
+
+                <Spinner
+                    android:id="@+id/spinnerFrequently"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayoutDays"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:orientation="vertical"
+            android:padding="4dp"
+            android:visibility="visible">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/muli_regular"
+                android:text="Days"
+                android:textColor="#2B616D" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/buttonDays"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="5dp"
+                android:backgroundTint="?colorSurface"
+                android:drawableEnd="@drawable/ic_baseline_play_arrow_24"
+                android:fontFamily="@font/muli_regular"
+                android:paddingStart="16dp"
+                android:paddingEnd="15dp"
+                android:text="Select Days"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="#2B616D"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:orientation="vertical"
+            android:padding="4dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/muli_regular"
+                android:text="Dosage"
+                android:textColor="#2B616D" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/buttonDosage"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="5dp"
+                android:backgroundTint="?colorSurface"
+                android:drawableEnd="@drawable/ic_baseline_play_arrow_24"
+                android:fontFamily="@font/muli_regular"
+                android:paddingStart="16dp"
+                android:paddingEnd="15dp"
+                android:text="1"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="#2B616D"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:orientation="vertical"
+            android:padding="4dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/muli_regular"
+                android:text="Time"
+                android:textColor="#2B616D" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/buttonTime"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="5dp"
+                android:backgroundTint="?colorSurface"
+                android:drawableEnd="@drawable/ic_baseline_play_arrow_24"
+                android:fontFamily="@font/muli_regular"
+                android:paddingStart="16dp"
+                android:paddingEnd="15dp"
+                android:text="14:30"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="#2B616D"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnSave"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="50dp"
+            android:background="@drawable/button_background"
+            android:fontFamily="@font/muli_regular"
+            android:text="Save"
+            android:textAllCaps="false"
+            android:textColor="@color/white" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnDelete"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="50dp"
+            android:background="@drawable/button_background"
+            android:fontFamily="@font/muli_regular"
+            android:text="Delete"
+            android:textAllCaps="false"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+</ScrollView>
